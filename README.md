@@ -46,7 +46,7 @@ AI Interview Coach is a web application designed to help users prepare for inter
 This project uses a local OLLAMA model for AI features. Before starting the app:
 
 1. Install Ollama from [https://ollama.com/download](https://ollama.com/download)
-2. Pull your desired model (replace `Model_name` with the actual model name):
+2. Pull your desired model (llama3 is recommended as it is fairly lightweight and the code is optimised for it):
    ```powershell
    ollama pull "Model_name"
    ```
