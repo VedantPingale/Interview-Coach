@@ -1,0 +1,5 @@
+{
+  "name": "AI Interview Coach",
+  "description": "An AI-powered interview coach that provides dynamically generated questions, real-time feedback, and tracks your progress to help you ace your next interview.",
+  "requestFramePermissions": []
+}
