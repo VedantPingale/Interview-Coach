@@ -1,20 +1,68 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
 
-# Run and deploy your AI Studio app
+# AI Interview Coach
 
-This contains everything you need to run your app locally.
+AI Interview Coach is a web application designed to help users prepare for interviews using AI-powered coaching, feedback, and progress tracking. It features interactive interview sessions, domain selection, analysis reports, and user authentication.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1pv4MDEg6kCJkfVaknNI3laol_rRMPDZe
+## Features
+- AI-driven interview simulation and feedback
+- Domain-specific question selection
+- Progress tracking and analysis reports
+- User authentication and profile management
+- Modern UI built with React and Vite
 
-## Run Locally
+## Prerequisites
+- Node.js (v16 or higher recommended)
+- npm (comes with Node.js)
 
-**Prerequisites:**  Node.js
+## Getting Started
+
+1. **Clone the repository:**
+   ```powershell
+   git clone https://github.com/VedantPingale/Interview-Coach.git
+   cd Interview-Coach
+   ```
+
+2. **Install dependencies:**
+   ```powershell
+   npm install
+   ```
 
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+
+3. **Start the backend server (connects to AI model):**
+   ```powershell
+   cd server
+   node index.js
+   ```
+
+4. **Run the development server:**
+   ```powershell
+   npm run dev
+   ```
+   The app will be available at `http://localhost:3000`.
+
+**Note:**
+
+This project uses a local OLLAMA model for AI features. Before starting the app:
+
+1. Install Ollama from [https://ollama.com/download](https://ollama.com/download)
+2. Pull your desired model (replace `Model_name` with the actual model name):
+   ```powershell
+   ollama pull "Model_name"
+   ```
+3. Make sure your OLLAMA model is running locally before starting the backend and frontend servers.
+
+No environment variables are required for setup.
+
+## Project Structure
+- `components/` - React components for UI, authentication, interview, layout, etc.
+- `hooks/` - Custom React hooks
+- `pages/` - Main application pages
+- `server/` - Backend server and database files
+- `services/` - Service modules for AI, authentication, and Supabase
+
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is licensed under the MIT License.
